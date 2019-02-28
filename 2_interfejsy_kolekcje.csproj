@@ -44,12 +44,16 @@
   <ItemGroup>
     <Compile Include="CollectionElement.cs" />
     <Compile Include="ElementEnumerator.cs" />
+    <Compile Include="FileLoader.cs" />
+    <Compile Include="FunWithLists.cs" />
     <Compile Include="IElement.cs" />
+    <Compile Include="ListFromFileLoader.cs" />
     <Compile Include="MySpecialCollection.cs" />
     <Compile Include="Extensions\MyExtensions.cs" />
     <Compile Include="Partial.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Translator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="2_interfejsy_kolekcje.licenseheader" />

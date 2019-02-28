@@ -1,0 +1,7 @@
+cat
+cow
+dog
+table
+pot
+personal computer
+blue book

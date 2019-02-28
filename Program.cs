@@ -17,30 +17,37 @@ namespace _2_interfejsy_kolekcje
     {
         static void Main(string[] args)
         {
-            WritePrimesOnlyLinq(5);
-            WritePrimes();
+            /* WritePrimesOnlyLinq(5);
+             WritePrimes();
 
 
-            ExtraShort();
-            MySpecialCollection collection = new MySpecialCollection();
+             ExtraShort();
+             MySpecialCollection collection = new MySpecialCollection();
 
-            LikeSql(collection);
-
-
-            collection = new MySpecialCollection();
-
-            var filter = collection.Where(e => e.Weight % 2 == 1);
+             LikeSql(collection);
 
 
-            foreach(var e in filter)
-            {
-                Console.WriteLine(string.Format("f[{0}]", e.Weight));
-            }
+             collection = new MySpecialCollection();
 
-            Console.WriteLine(collection);
+             var filter = collection.Where(e => e.Weight % 2 == 1);
 
-            Console.WriteLine(string.Format("Is collection longer than 5 elements: {0}", collection.LongerThanFiveElements()));
-            Console.ReadLine();
+
+             foreach(var e in filter)
+             {
+                 Console.WriteLine(string.Format("f[{0}]", e.Weight));
+             }
+
+             Console.WriteLine(collection);
+
+             Console.WriteLine(string.Format("Is collection longer than 5 elements: {0}", collection.LongerThanFiveElements()));
+             Console.ReadLine();*/
+
+            FileLoader loader = new FileLoader();
+            var wordList = loader.LoadStringCollectionFromFile("words.txt");
+
+            FunWithLists fun = new FunWithLists();
+            Console.WriteLine(fun.FindShortestWords(wordList).Count);
+
             Console.ReadLine();
         }
 
